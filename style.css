@@ -1,0 +1,666 @@
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        scroll-behavior: smooth;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    body {
+        font-family: 'Roboto', sans-serif;
+
+    }
+
+    .header {
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .header img {
+        max-width: 100px;
+    }
+
+    .links {
+        display: flex;
+        gap: 40px;
+    }
+
+    .links li {
+        list-style: none;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #F9F9F9;
+        font-size: 1.5rem;
+
+        border-bottom: solid white 2px;
+        border-width: 0;
+
+
+
+    }
+
+    .links a :hover{
+        border-width: 100%;
+    }
+
+    .linha-link{
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+margin: 0 auto;
+        transition: 0.3s;
+    }
+.links li:hover .linha-link{
+background-color: #fff; 
+width: 100%;
+height: 2px;
+}
+
+
+    .links hr {
+        width: 0;
+        transition: 0.3s;
+        margin: 0 auto;
+
+    }
+
+    .links li:hover hr {
+        width: 100%;
+
+    }
+
+    /*Começo do Banner*/
+    .banner {
+        max-width: 100%;
+        height: 80vh;
+        /*background-image: url(https://media.istockphoto.com/id/1282125191/pt/foto/planet-earth-from-the-space-at-night.jpg?s=612x612&w=0&k=20&c=k7-MULGUcFYZ9C9npY3P9nWFGYUsOf3ESGB6sn-NgxQ=);*/
+        background-color: gray;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*Fim do banner*/
+    /*Começo do sobre mim*/
+    .sobre-mim {
+        padding: 100px;
+    }
+
+    .sobre-mim>h1 {
+        text-align: center;
+        font-size: 8em ;
+        color: #3F3C3C;
+        margin-bottom: 40px;
+        font-weight: 700;
+
+    }
+
+    .texto-perfil {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+
+    .texto-perfil img {
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+
+        border: solid black 2px;
+
+    }
+
+    .texto {
+        border-radius: 8px;
+        border: 1px solid #A7A5A5;
+        max-width: 70ch;
+        background: #EEF1EF;
+        padding: 50px;
+    }
+
+    .texto p {
+        font-size: 1.5rem;
+        color: #565454;
+        font-weight: 400;
+        line-height: 166.406%;
+
+
+
+    }
+
+
+    @media (max-width:850px) {
+        .texto-perfil {
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .texto-perfil img {
+            margin: 80px 25% !important;
+            scale: 1.2;
+        }
+
+    }
+
+    /*Fim do sobre mim*/
+
+    /*Começo do Hard Skills*/
+
+    .skills {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 140px;
+    }
+
+
+    .icons {
+        display: flex;
+        align-items: center;
+    }
+
+    .icons img {
+        max-width: 110px;
+    }
+
+    .icon-1,
+    .icon-2 {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .hard-skills h1 {
+        font-size: 12.5rem;
+        user-select: none;
+    }
+
+    .hard {
+        font-weight: 700;
+        margin-bottom: -60px;
+    }
+
+    .skills-1 {
+        font-weight: 100;
+        font-family: Montserrat;
+
+    }
+
+
+    @media (max-width:850px) {
+        .skills {
+            display: block;
+            text-align: center;
+        }
+
+        .icons {
+            display: flex;
+            justify-content: center;
+        }
+
+    }
+
+    /*Fim do Hard Skills*/
+
+    /*Começo dos projetos*/
+    .projetos {
+        background-color: #141414;
+        color: #F9F9F9;
+
+        overflow: hidden;
+
+    }
+
+    .projetos-titulo {
+        padding-top: 50px;
+        padding-bottom: 100px;
+        text-align: center;
+        font-size: 4rem;
+
+        width: 500px;
+
+        margin: 0 auto;
+
+
+    }
+
+    .projetos-titulo hr {
+        width: 200px;
+        height: 20px;
+        background-color: #4A7D9E;
+
+        border: none;
+        border-radius: 10px;
+    }
+
+    .projetos-titulo hr:nth-child(1) {
+        float: right;
+    }
+
+
+
+    .project {
+        display: flex;
+        background-color: #141414;
+
+        transition: 1s;
+    }
+
+    .projeto {
+        background-color: #d9d9d9;
+        max-width: 25vw;
+        color: #141414;
+        text-align: center;
+        border-radius: 10px 10px 10px 10px;
+        margin-left: 80px;
+        padding-bottom: 50px;
+
+    }
+
+    .projeto img {
+        max-width: 25vw;
+        height: 300px;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .projeto h1 {
+        font-size: 3rem;
+    }
+
+    .projeto p {
+        font-size: 1.5rem;
+    }
+
+
+
+    
+
+    /*Fim dos projetos*/
+
+    /*Começo do contato*/
+    .contato-p {
+        background: linear-gradient(32deg, #fff 50%, #141414 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 200px;
+
+        gap: 200px;
+    }
+
+    .redes ul {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+
+        list-style: none;
+    }
+
+
+    .contato-redes {
+        margin-top: 150px;
+    }
+
+    .redes img {
+        max-width: 70px;
+    }
+
+    .contato h1 {
+        font-size: 8rem;
+
+
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #FFF;
+        margin-top: -150px;
+    }
+
+    .input {
+        display: block;
+        width: 100%;
+        margin: 0 !important;
+
+
+    }
+
+    .input input[id="aa"] {
+        margin-bottom: 20px;
+        width: 400px;
+        border-radius: 8px;
+        height: 50px;
+
+    }
+
+    .input input[id="aa"],
+    .textarea::placeholder {
+        font-size: 1.2rem;
+        padding: 10px;
+        font-weight: 200;
+    }
+
+    .input input:last-of-type {
+        background-color: #141414;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+        color: #FFF;
+
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .textarea {
+        width: 400px !important;
+        height: 350px !important;
+        border-radius: 15px;
+
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+
+    .contato-p>div {
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    @media (min-width:1025px) {
+        .projeto , .projeto img{
+            min-width: 26vw;
+        }
+
+        .project div:nth-of-type(3){
+            margin-right: 50px !important;
+        }
+    }
+    @media
+    /* (min-width:850px) and */
+    (max-width:1024px) {
+        .contato-redes {
+            margin-top: 300px;
+            margin-right: 20px;
+        }
+
+        /*Header*/
+        .links li a {
+            font-size: 2.3rem;
+        }
+
+        .links {
+            gap: 35px;
+        }
+
+        .links li hr {
+            display: none;
+        }
+
+        /*Sobre mim*/
+
+        .texto {
+            padding: 10px;
+        }
+
+        /*Projetos*/
+        .navegador img {
+            width: 100px;
+        }
+
+        .projeto, .projeto img {
+            min-width: 400px;
+        }
+
+
+        .navegador {
+            gap: 100px;
+        }
+
+
+
+        /*Skills*/
+        .hard,
+        .skills-1 {
+            font-size: 8rem !important;
+        }
+
+        /*Contato*/
+        .contato-p {
+            gap: 40px;
+        }
+
+        .redes ul li img {
+            width: 50px;
+        }
+
+        .redes ul {
+            gap: 20px;
+            float: right;
+        }
+
+        .contato h1 {
+            font-size: 4.5rem;
+            text-align: right;
+        }
+
+        .textarea {
+            width: 400px !important;
+        }
+
+
+    }
+
+    @media (max-width:900px) and (min-width:794px) {
+
+        .projeto, .projeto img{
+          width: 70vw !important;
+        }
+
+        .projeto{
+            margin: 0;
+            margin-left: 15vw;
+            margin-right: 15vw;
+        }
+
+        
+    }
+
+
+
+    @media (max-width:793px) {
+
+
+        .contato-redes {
+            margin-top: 300px;
+            margin-right: 20px;
+        }
+
+        /*Header*/
+        .links li a {
+            font-size: 2rem;
+        }
+
+        /*Contato*/
+
+        .textarea,
+        input[id="aa"] {
+            width: 330px !important;
+        }
+    }
+
+    @media (max-width:700px) {
+
+        .contato-p {
+            display: flex;
+            justify-content: center;
+            padding-top: 0;
+            width: 100vw;
+        }
+
+        .contato-p>div {
+            display: block;
+        }
+
+        .redes ul {
+            float: none;
+        }
+
+        .redes ul li img {
+            filter: invert(100);
+
+            margin: 50px auto;
+        }
+
+        .redes {
+            width: 300px;
+
+        }
+
+
+        .contato {
+            width: 300px;
+        }
+
+        .contato h1 {
+            color: #fff;
+            -webkit-text-stroke-width: 0;
+            font-size: 4rem;
+            margin-right: 40px;
+        }
+
+        .links li a {
+            font-size: 1.3rem;
+        }
+    }
+
+   
+    @media (max-width:380px) {
+
+        .textarea,
+        input[id="aa"] {
+            width: 250px !important;
+
+        }
+
+        .redes ul li img {
+            width: 30px;
+        }
+
+        .contato h1 {
+            font-size: 3rem;
+        }
+
+        .contato-redes {
+            margin-left: -40px;
+        }
+
+        /*Cabeçalho*/
+
+        .image-h img {
+            width: 50px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .links li a {
+            font-size: .7rem;
+        }
+
+        .links li hr {
+            display: none;
+        }
+
+        .links {
+            gap: 15px;
+        } 
+        .sobre-mim {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .sobre-mim h1 {
+        font-size: 4rem;
+
+    }
+
+    .texto {
+        margin: 20px 20px;
+        
+    }
+
+    .texto p{
+        font-size: 1rem;
+        
+    }
+.texto-perfil{
+    justify-content: center;
+    margin-left: 0px !important;
+    width: 90vw;
+    padding: 0 auto !important;
+}
+    .texto-perfil img{
+       
+        width: 60vw;
+        height: 60vw;
+        margin-left: 15vw !important;
+    }
+
+
+
+
+.hard-skills > h1{
+    font-size: 5.5rem !important;
+margin: 0;    
+    }
+    .icons img{
+        width: 20vw;
+    }
+
+    .projetos-titulo {
+font-size: 2rem; 
+width: 80vw;      
+        
+    }
+
+  
+   .project{
+    padding: 0;
+    margin:0;
+    gap: 20px;
+
+
+   }
+
+    .projeto{
+               
+                height: 500px;
+
+                font-size: 20px !important;
+
+    }
+
+    .projeto, .projeto img{
+        width: 1000px !important;
+    }
+
+    .projeto h1, .projeto p {
+        font-size: 25px;
+    }
+   
+
+
+    }
+    
+    /*Sobre mim*/
+   
